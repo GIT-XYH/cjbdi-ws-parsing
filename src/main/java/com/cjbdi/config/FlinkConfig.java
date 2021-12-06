@@ -41,7 +41,7 @@ public class FlinkConfig {
     //最终结果写入topic失败标签
     public static OutputTag<String> writeErrorData = new OutputTag<String>("toKafka-error") {};
 
-    public static void flinkEnv(ParameterTool parameterTool) throws IOException {
+    public static void flinkEnv(ParameterTool parameterTool) {
         //配置 flink 的运行环境
         //获取并传递全局参数
         env.getConfig().setGlobalJobParameters(parameterTool);
@@ -65,7 +65,7 @@ public class FlinkConfig {
                 .setTopics(inputTopic)
                 .setGroupId(KafkaConfig.groupId)
                 .setValueOnlyDeserializer(new SimpleStringSchema())
-                .setStartingOffsets(OffsetsInitializer.committedOffsets(OffsetResetStrategy.EARLIEST))
+                .setStartingOffsets(OffsetsInitializer.committedOffsets(OffsetResetStrategy.LATEST))
                 .setProperty("commit.offsets.on.checkpoint", "true")
                 .build();
         //kafkaSink 将 jsonToBean 失败的数据放到kafka 指定的 topic 中
@@ -74,7 +74,7 @@ public class FlinkConfig {
                 .setRecordSerializer(KafkaRecordSerializationSchema.builder()
                         .setTopic(jsonErrorTopic)
                         .setValueSerializationSchema(new SimpleStringSchema())
-                        .build()
+                .build()
                 )
                 .build();
         //kafkaSink 将最终处理好的数据输出到 kafka 指定的 topic 中

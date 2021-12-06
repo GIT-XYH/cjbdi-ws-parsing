@@ -31,7 +31,7 @@ public class WsSourceJsonToWsBeanFunction extends ProcessFunction<String, WsBean
     }
 
     @Override
-    public void open(Configuration parameters) throws Exception {
+    public void open(Configuration parameters) {
         ParameterTool globalJobParameters = (ParameterTool) getRuntimeContext().getExecutionConfig().getGlobalJobParameters();
         flag = globalJobParameters.getBoolean("execution-time-flag", false);
         startTime = globalJobParameters.getInt("execution-time-start", 0);
@@ -44,8 +44,15 @@ public class WsSourceJsonToWsBeanFunction extends ProcessFunction<String, WsBean
 
     }
 
+    /**
+     * @param s
+     * @param context
+     * @param collector
+     * @return void
+     * @Description 将从 kafkaSource 获取的 json 字符串解析成 bean, 解析失败的使用侧流输出, 打上指定标签
+     */
     @Override
-    public void processElement(String s, Context context, Collector<WsBeanFromKafka> collector) throws Exception {
+    public void processElement(String s, Context context, Collector<WsBeanFromKafka> collector) {
 
 //        if (flag) {
 //            int hour;
@@ -58,7 +65,6 @@ public class WsSourceJsonToWsBeanFunction extends ProcessFunction<String, WsBean
 //                hour = calendar.get(Calendar.HOUR_OF_DAY);
 //            }
 //        }
-
         try {
             WsBeanFromKafka wsBeanFromKafka = JSON.parseObject(s, WsBeanFromKafka.class);
             collector.collect(wsBeanFromKafka);

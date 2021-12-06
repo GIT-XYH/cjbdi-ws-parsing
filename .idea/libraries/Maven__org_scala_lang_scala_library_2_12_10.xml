@@ -8,13 +8,13 @@
       </compiler-classpath>
     </properties>
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10.jar!/" />
+      <root url="jar://$USER_HOME$/config/my_maven/repository/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/config/my_maven/repository/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/" />
+      <root url="jar://$USER_HOME$/config/my_maven/repository/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

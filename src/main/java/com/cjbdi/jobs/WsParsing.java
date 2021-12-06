@@ -26,22 +26,25 @@ public class WsParsing {
         ParameterTool parameterTool = ParameterTool.fromPropertiesFile(args[0]);
         //flink 相关配置
         FlinkConfig.flinkEnv(parameterTool);
+        //整个 job 的并行度
+        int parallelism = env.getParallelism();
+        System.out.println("当前 job 的执行环境并行度为: " + parallelism);
         //kafka 相关配置
         KafkaConfig.KafkaEnv(parameterTool);
         //从指定的kafkaSouse中读取数据
         DataStreamSource<String> kafkaStream = FlinkConfig.env.fromSource(FlinkConfig.kafkaSource, WatermarkStrategy.noWatermarks(), "ws-source");
         //将kafka中的json转成bean
         SingleOutputStreamOperator<WsBeanFromKafka> wsBeanStream = kafkaStream.process(new WsSourceJsonToWsBeanFunction(jsonErrorData));
-        //输出json解析失败的数据
+        //获取json解析失败的数据
         DataStream<String> jsonErrorStream = wsBeanStream.getSideOutput(jsonErrorData);
         //将 json 解析失败的数据放到 kafka 指定的 topic 中
         jsonErrorStream.sinkTo(jsonErrorSink);
 
-        // TODO: 2021/12/1 解析文书, 标签参数待定
-        SingleOutputStreamOperator<Object> analysisStream = wsBeanStream.process(new AnalysisProcessFunction(writeErrorData));
-        // TODO: 2021/12/1 将解析好的文书转成一个json
+//         TODO: 2021/12/4 解析文书, 标签参数待定
+        SingleOutputStreamOperator<String> analysisStream = wsBeanStream.process(new AnalysisProcessFunction(writeErrorData));
+//         TODO: 2021/12/4 将解析好的文书转成一个json
 
-        // TODO: 2021/12/2 将解析好的 json 写入 kafka
+//         TODO: 2021/12/4 将解析好的 json 写入 kafka
         kafkaStream.sinkTo(finalSink);
         FlinkConfig.env.execute();
     }

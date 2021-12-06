@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cjbdi-ws-parsing" target="1.8" />
+      <module name="cjbdi-ws-parsing" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
