@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/wsParsingWithMod.iml" filepath="$PROJECT_DIR$/wsParsingWithMod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../framework/cjbdi-base/cjbdi-base.iml" filepath="$PROJECT_DIR$/../framework/cjbdi-base/cjbdi-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../framework/cjbdi-fp-docs/cjbdi-fp-docs.iml" filepath="$PROJECT_DIR$/../framework/cjbdi-fp-docs/cjbdi-fp-docs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../framework/cjbdi-fp-text/cjbdi-fp-text.iml" filepath="$PROJECT_DIR$/../framework/cjbdi-fp-text/cjbdi-fp-text.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../framework/cjbdi-gfs/cjbdi-gfs.iml" filepath="$PROJECT_DIR$/../framework/cjbdi-gfs/cjbdi-gfs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../framework/cjbdi-ws-common/cjbdi-ws-common.iml" filepath="$PROJECT_DIR$/../framework/cjbdi-ws-common/cjbdi-ws-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cjbdi-ws-parsing.iml" filepath="$PROJECT_DIR$/cjbdi-ws-parsing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../framework/shesu-wsdoc/shesu-wsdoc.iml" filepath="$PROJECT_DIR$/../framework/shesu-wsdoc/shesu-wsdoc.iml" />
     </modules>
   </component>
 </project>

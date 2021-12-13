@@ -1,8 +1,8 @@
 package com.cjbdi.udfs;
 
 import com.alibaba.fastjson.JSON;
-import com.cjbdi.bean.WsBean;
-import com.cjbdi.bean.WsBeanFromKafka;
+import com.cjbdi.wscommon.bean.WsBean;
+import com.cjbdi.wscommon.bean.WsBeanWithFile;
 import org.apache.commons.io.FileUtils;
 import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.configuration.Configuration;
@@ -20,7 +20,7 @@ import java.util.Date;
  * @Date: 2021/12/3 2:35 下午
  * @Description: TODO
  */
-public class Base64ToFileProcessFunction extends ProcessFunction<WsBeanFromKafka, String> {
+public class Base64ToFileProcessFunction extends ProcessFunction<WsBeanWithFile, String> {
     private OutputTag<String> writeErrorData;
     private String fileDir;
     private SimpleDateFormat simpleDateFormat;
@@ -38,7 +38,7 @@ public class Base64ToFileProcessFunction extends ProcessFunction<WsBeanFromKafka
 
 
     @Override
-    public void processElement(WsBeanFromKafka wsBeanFromKafka, Context context, Collector<String> collector) throws Exception {
+    public void processElement(WsBeanWithFile wsBeanFromKafka, Context context, Collector<String> collector) throws Exception {
 
         try {
 //            WsBeanDownloaded wsBeanDownloaded = JSON.parseObject(s, WsBeanDownloaded.class);

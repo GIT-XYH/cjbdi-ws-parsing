@@ -7,10 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="wsParsingWithMod" />
+        <module name="cjbdi-fp-docs" />
+        <module name="cjbdi-fp-text" />
+        <module name="cjbdi-ws-parsing" />
+        <module name="cjbdi-base" />
+        <module name="shesu-wsdoc" />
+        <module name="cjbdi-ws-common" />
+        <module name="cjbdi-gfs" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cjbdi-base" target="1.8" />
+      <module name="cjbdi-fp-docs" target="1.8" />
+      <module name="cjbdi-fp-text" target="1.8" />
+      <module name="cjbdi-gfs" target="1.8" />
+      <module name="cjbdi-ws-common" target="1.8" />
+      <module name="cjbdi-ws-parsing" target="8" />
+      <module name="shesu-common" target="1.8" />
+      <module name="shesu-wsdoc" target="1.8" />
       <module name="WsParsing" target="8" />
       <module name="wsParsingWithMod" target="8" />
     </bytecodeTargetLevel>

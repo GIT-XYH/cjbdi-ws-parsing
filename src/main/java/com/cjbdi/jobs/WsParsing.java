@@ -1,13 +1,10 @@
 package com.cjbdi.jobs;
 
-import com.cjbdi.bean.WsBeanFromKafka;
-import com.cjbdi.bean.WsBeanParsing;
 import com.cjbdi.config.FlinkConfig;
 import com.cjbdi.config.KafkaConfig;
-import com.cjbdi.udfs.Base64ToFileProcessFunction;
-import com.cjbdi.udfs.WsBeanParsingToJsonProcessFunction;
 import com.cjbdi.udfs.WsSourceJsonToWsBeanFunction;
 import com.cjbdi.udfs.AnalysisProcessFunction;
+import com.cjbdi.wscommon.bean.WsBeanWithFile;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.streaming.api.datastream.DataStream;
@@ -36,7 +33,7 @@ public class WsParsing {
         //从指定的kafkaSouse中读取数据
         DataStreamSource<String> kafkaStream = FlinkConfig.env.fromSource(FlinkConfig.kafkaSource, WatermarkStrategy.noWatermarks(), "ws-source");
         //将kafka中的json转成bean
-        SingleOutputStreamOperator<WsBeanFromKafka> wsBeanStream = kafkaStream.process(new WsSourceJsonToWsBeanFunction(jsonErrorData));
+        SingleOutputStreamOperator<WsBeanWithFile> wsBeanStream = kafkaStream.process(new WsSourceJsonToWsBeanFunction(jsonErrorData));
         //获取json解析失败的数据
         DataStream<String> jsonErrorStream = wsBeanStream.getSideOutput(jsonErrorData);
         //将 json 解析失败的数据放到 kafka 指定的 topic 中

@@ -1,7 +1,7 @@
 package com.cjbdi.udfs;
 
 import com.alibaba.fastjson.JSON;
-import com.cjbdi.bean.WsBeanFromKafka;
+import com.cjbdi.wscommon.bean.WsBeanWithFile;
 import org.apache.flink.api.common.state.ValueState;
 import org.apache.flink.api.common.state.ValueStateDescriptor;
 import org.apache.flink.api.java.utils.ParameterTool;
@@ -18,7 +18,7 @@ import java.util.Calendar;
  * @Date: 2021/12/1 9:35 下午
  * @Description: TODO
  */
-public class WsSourceJsonToWsBeanFunction extends ProcessFunction<String, WsBeanFromKafka> {
+public class WsSourceJsonToWsBeanFunction extends ProcessFunction<String, WsBeanWithFile> {
     private final OutputTag<String> outputTag;
     private boolean flag;
     private int startTime;
@@ -52,10 +52,10 @@ public class WsSourceJsonToWsBeanFunction extends ProcessFunction<String, WsBean
      * @Description 将从 kafkaSource 获取的 json 字符串解析成 bean, 解析失败的使用侧流输出, 打上指定标签
      */
     @Override
-    public void processElement(String s, Context context, Collector<WsBeanFromKafka> collector) {
+    public void processElement(String s, Context context, Collector<WsBeanWithFile> collector) {
 
         try {
-            WsBeanFromKafka wsBeanFromKafka = JSON.parseObject(s, WsBeanFromKafka.class);
+            WsBeanWithFile wsBeanFromKafka = JSON.parseObject(s, WsBeanWithFile.class);
             collector.collect(wsBeanFromKafka);
         } catch (Exception e) {
             e.printStackTrace();

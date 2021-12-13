@@ -1,7 +1,7 @@
 package com.cjbdi.udfs;
 
 import com.alibaba.fastjson.JSON;
-import com.cjbdi.bean.WsBeanParsing;
+import com.cjbdi.wscommon.bean.WsBeanParsing;
 import org.apache.flink.streaming.api.functions.ProcessFunction;
 import org.apache.flink.util.Collector;
 
