@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cjbdi-ws-parsing" />
+        <module name="wsParsingWithMod" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cjbdi-ws-parsing" target="8" />
+      <module name="WsParsing" target="8" />
+      <module name="wsParsingWithMod" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -54,17 +54,6 @@ public class WsSourceJsonToWsBeanFunction extends ProcessFunction<String, WsBean
     @Override
     public void processElement(String s, Context context, Collector<WsBeanFromKafka> collector) {
 
-//        if (flag) {
-//            int hour;
-//            Calendar calendar = Calendar.getInstance();
-//            hour = calendar.get(Calendar.HOUR_OF_DAY);
-
-//            while (hour >= 5 && hour < 22) {
-//                Thread.sleep(1000L * 60);
-//                calendar.setTimeInMillis(System.currentTimeMillis());
-//                hour = calendar.get(Calendar.HOUR_OF_DAY);
-//            }
-//        }
         try {
             WsBeanFromKafka wsBeanFromKafka = JSON.parseObject(s, WsBeanFromKafka.class);
             collector.collect(wsBeanFromKafka);

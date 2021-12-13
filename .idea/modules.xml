@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cjbdi-ws-parsing.iml" filepath="$PROJECT_DIR$/cjbdi-ws-parsing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wsParsingWithMod.iml" filepath="$PROJECT_DIR$/wsParsingWithMod.iml" />
     </modules>
   </component>
 </project>

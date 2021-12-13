@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62168758-ddf9-4d44-b814-22161a7bb476" name="Default Changelist" comment="kafkaToKafka">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_htmlparser_htmllexer_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_htmlparser_htmlparser_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/cjbdi_fp_text_0_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/cjbdi_gfs_0_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/shesu_wsdoc_0_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/content.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/cjbdi-base-0.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/cjbdi-fp-docs-0.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/cjbdi-fp-text-0.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/cjbdi-gfs-0.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shesu-wsdoc-0.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ParsingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_discovery_commons_discovery_20040218_194635.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__wsdl4j_wsdl4j_1_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/cjbdi_base_0_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/cjbdi_base_0_0_1__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WsParsing.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
@@ -61,7 +52,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_core_3_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_core_3_2_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_6_2_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_6_2_Final.xml" afterDir="false" />
@@ -79,8 +70,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_7_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_7_4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_4_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_crypto_1_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_crypto_1_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_7_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_7_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_7_1.xml" afterDir="false" />
@@ -170,7 +162,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_5_0_b32.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_5_0_b32.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_5_0_b32.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_5_0_b32.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_1_b12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_1_b08.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_1_b08.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_1_b08.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_25_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_25_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_25_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_25_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_25_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_25_1.xml" afterDir="false" />
@@ -179,6 +171,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_25_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_25_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_web_javax_servlet_jsp_2_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_web_javax_servlet_jsp_2_3_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_htmlparser_htmllexer_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_htmlparser_htmllexer_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_htmlparser_htmlparser_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_htmlparser_htmlparser_2_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jamon_jamon_runtime_2_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jamon_jamon_runtime_2_4_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jruby_jcodings_jcodings_1_0_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jruby_jcodings_jcodings_1_0_18.xml" afterDir="false" />
@@ -198,54 +192,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_tukaani_xz_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_tukaani_xz_1_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_8_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cjbdi-ws-parsing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cjbdi-ws-parsing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wsDoc.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cjbdi-ws-parsing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wsParsingWithMod.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cjbdi/config/FlinkConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cjbdi/config/FlinkConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cjbdi/jobs/WsParsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cjbdi/jobs/WsParsing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cjbdi/udfs/AnalysisProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cjbdi/udfs/AnalysisProcessFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cjbdi/udfs/WsSourceJsonToWsBeanFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cjbdi/udfs/WsSourceJsonToWsBeanFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cjbdi/write2hbase/FlinkConsumerKafka2Hbase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cjbdi/write2hbase/Kafka2HbaseDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/parameter.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parameter.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/cjbdi/ProducerDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/cjbdi/ProducerDemo.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/cjbdi/ProducerDemo2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/cjbdi/ProducerDemo2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Kafka2Hbase-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/ProducerDemo$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/ProducerDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/ProducerDemo2$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/ProducerDemo2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/ProducerDemo3$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/ProducerDemo3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/ProducerDemo4$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/ProducerDemo4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/ProducerDemo5$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/ProducerDemo5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/bean/WsBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/bean/WsBeanFromKafka.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/bean/WsBeanParsing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/config/FlinkConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/config/FlinkConfig$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/config/FlinkConfig$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/config/FlinkConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/config/KafkaConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/jobs/WsParsing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/udfs/Base64ToFileProcessFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/udfs/WsBeanParsingToJsonProcessFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/udfs/WsSourceJsonToWsBeanFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/udfs/analysisFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/write2hbase/FlinkConsumerKafka2Hbase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cjbdi/write2hbase/Kafka2HbaseDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parameter.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-Kafka2Hbase-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FlinkWordCount$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FlinkWordCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ScopeTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WsBeanDownloaded.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/cjbdi/ProducerDemo3.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/cjbdi/ProducerDemo3.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/cjbdi/ProducerDemo4.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/cjbdi/ProducerDemo4.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,11 +225,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="$USER_HOME$/config/my_maven/repository" />
-        <option name="mavenHome" value="$USER_HOME$/config/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -290,20 +256,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/cjbdi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15703972" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/test/scala" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/com/cjbdi" />
       <recent name="$PROJECT_DIR$/src/main/java" />
-      <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/src/main/scala/com/cjbdi" />
-      <recent name="$PROJECT_DIR$/src/main/scala" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.cjbdi" />
@@ -316,17 +282,10 @@
       <recent name="com.cjbdi.write2hbase" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProducerDemo2">
-    <configuration name="ParsingTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ParsingTest" />
-      <module name="cjbdi-ws-parsing" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.WsParsing">
     <configuration name="ProducerDemo" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.cjbdi.ProducerDemo" />
-      <module name="cjbdi-ws-parsing" />
+      <module name="wsParsingWithMod" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cjbdi.*" />
@@ -339,7 +298,8 @@
     </configuration>
     <configuration name="ProducerDemo2" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.cjbdi.ProducerDemo2" />
-      <module name="cjbdi-ws-parsing" />
+      <module name="wsParsingWithMod" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/../../parameter2.properties" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cjbdi.*" />
@@ -350,16 +310,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScopeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ScopeTest" />
-      <module name="cjbdi-ws-parsing" />
+    <configuration name="ProducerDemo3" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.cjbdi.ProducerDemo3" />
+      <module name="wsParsingWithMod" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cjbdi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="WsParsing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cjbdi.jobs.WsParsing" />
-      <module name="cjbdi-ws-parsing" />
+      <module name="wsParsingWithMod" />
       <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/src/main/resources/parameter.properties" />
       <extension name="coverage">
         <pattern>
@@ -371,24 +337,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="wsParsingWithMod" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="wsParsingWithMod" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="wsParsingWithMod" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="javaOptions" value="-Djline.terminal=NONE" />
+      <option name="myConsoleArgs" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.WsParsing" />
       <item itemvalue="Application.ProducerDemo" />
-      <item itemvalue="Application.ScopeTest" />
-      <item itemvalue="Application.ParsingTest" />
       <item itemvalue="Application.ProducerDemo2" />
+      <item itemvalue="Application.ProducerDemo3" />
+      <item itemvalue="Scala REPL.Scala REPL" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProducerDemo2" />
         <item itemvalue="Application.WsParsing" />
         <item itemvalue="Application.ProducerDemo" />
-        <item itemvalue="Application.ParsingTest" />
-        <item itemvalue="Application.ScopeTest" />
+        <item itemvalue="Application.ProducerDemo3" />
+        <item itemvalue="Application.ProducerDemo2" />
+        <item itemvalue="Scala REPL.Scala REPL" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="62168758-ddf9-4d44-b814-22161a7bb476" name="Default Changelist" comment="" />
@@ -430,8 +439,28 @@
       <workItem from="1638753896591" duration="16023000" />
       <workItem from="1638776202335" duration="4815000" />
       <workItem from="1638781083319" duration="253000" />
-      <workItem from="1638801304634" duration="362000" />
+      <workItem from="1638801304634" duration="1327000" />
+      <workItem from="1638840130886" duration="11986000" />
+      <workItem from="1638859914076" duration="1688000" />
+      <workItem from="1638866189497" duration="1685000" />
+      <workItem from="1638932776329" duration="626000" />
+      <workItem from="1638938203803" duration="199000" />
+      <workItem from="1638942592148" duration="815000" />
+      <workItem from="1638968034310" duration="1963000" />
+      <workItem from="1639014597423" duration="1068000" />
+      <workItem from="1639025290510" duration="6315000" />
+      <workItem from="1639100120720" duration="7000" />
+      <workItem from="1639100828248" duration="32135000" />
+      <workItem from="1639307450737" duration="10484000" />
     </task>
+    <task id="LOCAL-00001" summary="kafkaToKafka">
+      <created>1638801704605</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638801704605</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

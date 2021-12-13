@@ -1,6 +1,7 @@
 package com.cjbdi.udfs;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.cjbdi.bean.WsBean;
 import com.cjbdi.bean.WsBeanFromKafka;
 import com.cjbdi.doc.detector.DocDetector;
@@ -123,9 +124,12 @@ public class AnalysisProcessFunction extends ProcessFunction<WsBeanFromKafka, St
         String text = HtmlParser.getPlainText(c_wsText);
 //        System.out.println(text);
         //将 text 转为 json 类型
-        String fullText = JSON.toJSONString(text);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("fullText", text);
+        String fullText = JSONObject.toJSONString(jsonObject);
         System.out.println(fullText);
-        String post = sendPost("http://192.1.188.222:9001/getDoc", fullText, null);
-        collector.collect(post);
+        // TODO: 2021/12/6 格式规范, 按照解析格式
+//        String post = sendPost("http://192.1.188.222:9001/getDoc", fullText, null);
+        collector.collect(fullText);
     }
 }

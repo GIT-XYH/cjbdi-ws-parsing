@@ -22,12 +22,14 @@ import static com.cjbdi.config.FlinkConfig.*;
  */
 public class WsParsing {
     public static void main(String[] args) throws Exception {
+
         //获取全局参数
         ParameterTool parameterTool = ParameterTool.fromPropertiesFile(args[0]);
         //flink 相关配置
         FlinkConfig.flinkEnv(parameterTool);
         //整个 job 的并行度
         int parallelism = env.getParallelism();
+
         System.out.println("当前 job 的执行环境并行度为: " + parallelism);
         //kafka 相关配置
         KafkaConfig.KafkaEnv(parameterTool);
@@ -39,13 +41,12 @@ public class WsParsing {
         DataStream<String> jsonErrorStream = wsBeanStream.getSideOutput(jsonErrorData);
         //将 json 解析失败的数据放到 kafka 指定的 topic 中
         jsonErrorStream.sinkTo(jsonErrorSink);
-
 //         TODO: 2021/12/4 解析文书, 标签参数待定
         SingleOutputStreamOperator<String> analysisStream = wsBeanStream.process(new AnalysisProcessFunction(writeErrorData));
-//         TODO: 2021/12/4 将解析好的文书转成一个json
-
+        DataStream<String> analysisStreamSideOutput = analysisStream.getSideOutput(writeErrorData);
+        analysisStreamSideOutput.sinkTo(analysisErrorSink);
 //         TODO: 2021/12/4 将解析好的 json 写入 kafka
-        kafkaStream.sinkTo(finalSink);
+        analysisStream.sinkTo(finalSink);
         FlinkConfig.env.execute();
     }
 }

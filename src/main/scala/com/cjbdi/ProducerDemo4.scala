@@ -21,14 +21,14 @@ object ProducerDemo4 {
     //指定value序列化方式
     props.setProperty("value.serializer", classOf[StringSerializer].getName) // 两种写法都行
 
-    val topic = "test" //6个分区{0, 1, 2, 3, 4, 5}
+    val topic = "test3" //6个分区{0, 1, 2, 3, 4, 5}
 
     // 2 kafka的生产者
     val producer: KafkaProducer[String, String] = new KafkaProducer[String, String](props)
     for (i <- 3201 to 3250) {
       // 3 封装的对象
       //指定分包编号，写入到指定的分区中
-      val record = new ProducerRecord[String, String](topic, "hbase66666", "kafka," + i)
+      val record = new ProducerRecord[String, String](topic, "kafka," + i)
       producer.send(record)
     }
 

@@ -4,6 +4,7 @@ import org.apache.flink.api.common.restartstrategy.RestartStrategies;
 import org.apache.flink.api.common.serialization.SimpleStringSchema;
 import org.apache.flink.api.common.time.Time;
 import org.apache.flink.api.java.utils.ParameterTool;
+import org.apache.flink.configuration.Configuration;
 import org.apache.flink.connector.kafka.sink.KafkaRecordSerializationSchema;
 import org.apache.flink.connector.kafka.sink.KafkaSink;
 import org.apache.flink.connector.kafka.source.KafkaSource;
@@ -26,9 +27,10 @@ import static com.cjbdi.config.KafkaConfig.*;
  */
 public class FlinkConfig {
     //运行环境设置
-    public static final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+    public static final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment(new Configuration());
     public static KafkaSource<String> kafkaSource;
     public static KafkaSink<String> jsonErrorSink;
+    public static KafkaSink<String> analysisErrorSink;
     public static KafkaSink<String> finalSink;
 
     /**
@@ -65,7 +67,7 @@ public class FlinkConfig {
                 .setTopics(inputTopic)
                 .setGroupId(KafkaConfig.groupId)
                 .setValueOnlyDeserializer(new SimpleStringSchema())
-                .setStartingOffsets(OffsetsInitializer.committedOffsets(OffsetResetStrategy.LATEST))
+                .setStartingOffsets(OffsetsInitializer.committedOffsets(OffsetResetStrategy.EARLIEST))
                 .setProperty("commit.offsets.on.checkpoint", "true")
                 .build();
         //kafkaSink 将 jsonToBean 失败的数据放到kafka 指定的 topic 中
@@ -73,6 +75,14 @@ public class FlinkConfig {
                 .setBootstrapServers(KafkaConfig.brokers)
                 .setRecordSerializer(KafkaRecordSerializationSchema.builder()
                         .setTopic(jsonErrorTopic)
+                        .setValueSerializationSchema(new SimpleStringSchema())
+                .build()
+                )
+                .build();
+        analysisErrorSink = KafkaSink.<String>builder()
+                .setBootstrapServers(KafkaConfig.brokers)
+                .setRecordSerializer(KafkaRecordSerializationSchema.builder()
+                        .setTopic(analysisErrorTopic)
                         .setValueSerializationSchema(new SimpleStringSchema())
                 .build()
                 )
