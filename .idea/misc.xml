@@ -9,7 +9,6 @@
         <option value="$PROJECT_DIR$/../framework/cjbdi-gfs/pom.xml" />
         <option value="$PROJECT_DIR$/../framework/cjbdi-base/pom.xml" />
         <option value="$PROJECT_DIR$/../framework/shesu-wsdoc/pom.xml" />
-        <option value="$PROJECT_DIR$/../ws-middle-platform/cjbdi-ws-common/pom.xml" />
         <option value="$PROJECT_DIR$/../framework/cjbdi-ws-common/pom.xml" />
       </list>
     </option>

@@ -22,6 +22,7 @@
       <module name="cjbdi-fp-text" target="1.8" />
       <module name="cjbdi-gfs" target="1.8" />
       <module name="cjbdi-ws-common" target="1.8" />
+      <module name="cjbdi-ws-common (1)" target="1.8" />
       <module name="cjbdi-ws-parsing" target="8" />
       <module name="shesu-common" target="1.8" />
       <module name="shesu-wsdoc" target="1.8" />
