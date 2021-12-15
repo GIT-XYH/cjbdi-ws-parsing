@@ -3,6 +3,7 @@ package com.cjbdi.udfs;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.cjbdi.doc.detector.DocDetector;
 import com.cjbdi.doc.detector.DocType;
 import com.cjbdi.fp.docs.Doc2Text;
@@ -12,6 +13,7 @@ import com.cjbdi.wscommon.bean.WsBean;
 import com.cjbdi.wscommon.bean.WsBeanWithFile;
 import com.cjbdi.wscommon.bean.es.ESDataBean;
 import com.cjbdi.wscommon.bean.es.ESEntitys;
+import com.cjbdi.wscommon.bean.JudgeMember;
 import com.cjbdi.wscommon.bean.es.ESParagraphs;
 import com.cjbdi.wscommon.bean.es.KafkaTopic2Bean;
 import org.apache.flink.streaming.api.functions.ProcessFunction;
@@ -145,6 +147,7 @@ public class AnalysisProcessFunction extends ProcessFunction<WsBeanWithFile, Str
             esDataBean.applicable_law = jo2.getString("applicablelaws");
             esDataBean.related_law = jo2.getString("relatedlows");
             esDataBean.pcourt = jo2.getString("parentcourtname");
+            esDataBean.judgeyear = Integer.valueOf(jo2.getString("judgedate").substring(0,4));
 
             ArrayList<ESEntitys> esEntitys = new ArrayList<>();
             JSONArray litigantslist = jo2.getJSONArray("litigantslist");
@@ -156,48 +159,33 @@ public class AnalysisProcessFunction extends ProcessFunction<WsBeanWithFile, Str
 
 
             JSONArray judgememberslist = jo2.getJSONArray("judgememberslist");
-            String clerk1 = "";
+
             for (int i = 0; i < judgememberslist.size(); i++) {
-                ESDataBean esDataBean1 = judgememberslist.getObject(i, ESDataBean.class);
+//                Object xx = judgememberslist.get(i);
+//                String s = xx.toString();
+//                JSONObject jo3 = JSON.parseObject(s);
+//                String identity = jo3.getString("identity");
+//                String substring = identity.substring(1, identity.length() - 1);
+//                if (substring == "书记员") {
+//                    clerk1 = substring;
+//                }
+
+                JudgeMember object = judgememberslist.getObject(i, JudgeMember.class);
+
+//                String s = object.getIdentity()[0];
+
+                if (33 == object.getType()) {
+                    if (esDataBean.clerk == null) {
+                        esDataBean.clerk = object.getName();
+                    } else {
+                        esDataBean.clerk += "," + object.getName();
+                    }
+                }
+
             }
-            esDataBean.clerk = clerk1;
 
-
-//            List<ESParagraphs> paragraphs = esDataBean.paragraphs;
-//            HashMap<String, String> stringStringHashMap = new HashMap<>();
-//            for (ESParagraphs paragraph : paragraphs) {
-//
-//                if (stringStringHashMap.containsKey(paragraph.tag)) {
-//                    stringStringHashMap.put(paragraph.tag, stringStringHashMap.get(paragraph.tag) + paragraph.content);
-//                } else {
-//                    stringStringHashMap.put(paragraph.tag, paragraph.content);
-//                }
-//
-//            }
-//            esDataBean.court = stringStringHashMap.getOrDefault("审理法院", null);
-//            esDataBean.before_instance = stringStringHashMap.getOrDefault("审理经过", null);
-//            esDataBean.appellant_opinion = stringStringHashMap.getOrDefault("诉称", null);
-//            esDataBean.court_consider = stringStringHashMap.getOrDefault("本院认为", null);
-//            esDataBean.judge_decision = stringStringHashMap.getOrDefault("裁判结果", null);
-//            esDataBean.clerk = stringStringHashMap.getOrDefault("书记员", null);
-//
-
-//            JSONArray paragraphsArray= jo2.getJSONArray("paragraphs");
-//          for (int i = 0; i < paragraphsArray.size(); i++) {
-//                ESParagraphs temp = paragraphsArray.getObject(i, ESParagraphs.class);
-//                String content = temp.content;
-//                String tag = temp.tag;
-//                if (tag.equals("审理法院"))
-//                {
-//                    esDataBean.court = content;
-//                } else if (tag.equals("案号")) {
-//                    esDataBean.caseid = content;
-//                }
-//
-//            }
-//            System.out.println(jo2);
             KafkaTopic2Bean kafkaTopic2Bean = new KafkaTopic2Bean(wsBean, esDataBean);
-            String jsonString = jsonObject.toJSONString(kafkaTopic2Bean);
+            String jsonString = jsonObject.toJSONString(kafkaTopic2Bean, SerializerFeature.WriteMapNullValue); //,SerializerFeature.PrettyFormat
             System.out.println(jsonString);
             collector.collect(jsonString);
         } catch (Exception e) {
