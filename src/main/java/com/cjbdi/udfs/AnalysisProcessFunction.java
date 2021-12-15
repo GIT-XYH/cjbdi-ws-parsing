@@ -20,6 +20,7 @@ import org.apache.flink.streaming.api.functions.ProcessFunction;
 import org.apache.flink.util.Collector;
 import org.apache.flink.util.OutputTag;
 
+import java.beans.Encoder;
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
@@ -152,28 +153,27 @@ public class AnalysisProcessFunction extends ProcessFunction<WsBeanWithFile, Str
             ArrayList<ESEntitys> esEntitys = new ArrayList<>();
             JSONArray litigantslist = jo2.getJSONArray("litigantslist");
             for (int i = 0; i < litigantslist.size(); i++) {
+                JSONObject jo3 = JSON.parseObject(litigantslist.getString(i));
+                String companyname = jo3.getString("companyname");
+                String idcard = jo3.getString("idcard");
+                String birthday = jo3.getString("birthday");
+                String profession = jo3.getString("profession");
+                String orgcard = jo3.getString("orgcard");
+
+
                 ESEntitys entitys = litigantslist.getObject(i, ESEntitys.class);
+                entitys.organizationname = companyname;
+                entitys.creditcard = idcard;
+                entitys.birthdate = birthday;
+                entitys.vocation = profession;
+                entitys.creditcode = orgcard;
                 esEntitys.add(entitys);
             }
             esDataBean.entities = esEntitys;
 
-
             JSONArray judgememberslist = jo2.getJSONArray("judgememberslist");
-
             for (int i = 0; i < judgememberslist.size(); i++) {
-//                Object xx = judgememberslist.get(i);
-//                String s = xx.toString();
-//                JSONObject jo3 = JSON.parseObject(s);
-//                String identity = jo3.getString("identity");
-//                String substring = identity.substring(1, identity.length() - 1);
-//                if (substring == "书记员") {
-//                    clerk1 = substring;
-//                }
-
                 JudgeMember object = judgememberslist.getObject(i, JudgeMember.class);
-
-//                String s = object.getIdentity()[0];
-
                 if (33 == object.getType()) {
                     if (esDataBean.clerk == null) {
                         esDataBean.clerk = object.getName();
