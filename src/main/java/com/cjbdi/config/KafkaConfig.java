@@ -18,16 +18,17 @@ import java.util.Properties;
 public class KafkaConfig {
 
     public static String brokers;
+    public static String brokers2;
     public static String groupId;
     public static String inputTopic;
     public static String outputTopic;
     public static String jsonErrorTopic;
     public static String analysisErrorTopic;
-    public static String toKafkaErrorTopic;
 
+    static Properties properties = null;
     public static void KafkaEnv(ParameterTool parameterTool) {
         //配置kafka参数设置
-        Properties properties = new Properties();
+        properties = new Properties();
         properties.setProperty("max.request.size", "214748364");
         properties.setProperty("compression.type", "gzip");
         properties.setProperty("buffer.memory", "335544320");
@@ -36,11 +37,11 @@ public class KafkaConfig {
 
         //指定 kafka topic 等相关参数
         brokers = parameterTool.getRequired("bootstrap-servers");
+        brokers2 = parameterTool.getRequired("bootstrap-servers2");
         groupId = parameterTool.getRequired("input-group-id");
         inputTopic = parameterTool.getRequired("input-topic");
         jsonErrorTopic = parameterTool.getRequired("json-error-topic");
         analysisErrorTopic = parameterTool.getRequired("analysis-error-topic");
         outputTopic = parameterTool.getRequired("output-topic");
-        toKafkaErrorTopic = parameterTool.getRequired("toKafka-error-topic");
     }
 }

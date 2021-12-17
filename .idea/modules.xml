@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/../framework/cjbdi-gfs/cjbdi-gfs.iml" filepath="$PROJECT_DIR$/../framework/cjbdi-gfs/cjbdi-gfs.iml" />
       <module fileurl="file://$PROJECT_DIR$/../framework/cjbdi-ws-common/cjbdi-ws-common.iml" filepath="$PROJECT_DIR$/../framework/cjbdi-ws-common/cjbdi-ws-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/cjbdi-ws-parsing.iml" filepath="$PROJECT_DIR$/cjbdi-ws-parsing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../framework/shesu-wsdoc/shesu-wsdoc.iml" filepath="$PROJECT_DIR$/../framework/shesu-wsdoc/shesu-wsdoc.iml" />
     </modules>
   </component>
 </project>

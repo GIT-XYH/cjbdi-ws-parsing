@@ -26,6 +26,8 @@ public class WsParsing {
         FlinkConfig.flinkEnv(parameterTool);
         //整个 job 的并行度
         int parallelism = env.getParallelism();
+        //传递全局参数
+        env.getConfig().setGlobalJobParameters(parameterTool);
 
         System.out.println("当前 job 的执行环境并行度为: " + parallelism);
         //kafka 相关配置

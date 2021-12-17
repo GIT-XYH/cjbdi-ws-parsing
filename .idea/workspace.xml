@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62168758-ddf9-4d44-b814-22161a7bb476" name="Default Changelist" comment="kafkaToKafka">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_re2j_re2j_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cjbdi-ws-parsing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cjbdi-ws-parsing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cjbdi/config/FlinkConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cjbdi/config/FlinkConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cjbdi/config/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cjbdi/config/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cjbdi/jobs/WsParsing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cjbdi/jobs/WsParsing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cjbdi/udfs/AnalysisProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cjbdi/udfs/AnalysisProcessFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/parameter.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parameter.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/cjbdi/ProducerDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/cjbdi/ProducerDemo.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +72,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/cjbdi/bean/es" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15703972" />
@@ -70,8 +82,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/cjbdi/bean/es" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/cjbdi/bean/es" />
       <recent name="$PROJECT_DIR$/src/test/scala" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/com/cjbdi" />
@@ -87,10 +99,30 @@
       <recent name="com.cjbdi.write2hbase" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WsParsing">
+  <component name="RunManager" selected="Application.ProducerDemo">
+    <configuration name="ErrorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ErrorTest" />
+      <module name="cjbdi-ws-parsing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JsonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JsonTest" />
       <module name="cjbdi-ws-parsing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProducerDemo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.cjbdi.ProducerDemo" />
+      <module name="cjbdi-ws-parsing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cjbdi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,6 +137,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,10 +170,14 @@
       <item itemvalue="Application.WsParsing" />
       <item itemvalue="Application.JsonTest" />
       <item itemvalue="Scala REPL.Scala REPL" />
+      <item itemvalue="Application.ProducerDemo" />
+      <item itemvalue="Application.ErrorTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProducerDemo" />
         <item itemvalue="Application.WsParsing" />
+        <item itemvalue="Application.ErrorTest" />
         <item itemvalue="Application.JsonTest" />
         <item itemvalue="Scala REPL.Scala REPL" />
       </list>
@@ -201,7 +248,11 @@
       <workItem from="1639395066990" duration="6028000" />
       <workItem from="1639445224558" duration="17000" />
       <workItem from="1639445441026" duration="38023000" />
-      <workItem from="1639538305636" duration="8324000" />
+      <workItem from="1639538305636" duration="23337000" />
+      <workItem from="1639579747624" duration="2950000" />
+      <workItem from="1639618376516" duration="24065000" />
+      <workItem from="1639711101262" duration="23000" />
+      <workItem from="1639711156184" duration="7310000" />
     </task>
     <task id="LOCAL-00001" summary="kafkaToKafka">
       <created>1638801704605</created>
@@ -238,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639539237802</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="kafkaToKafka">
+      <created>1639552151033</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639552151035</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,17 +317,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="kafkaToKafka" />
     <option name="LAST_COMMIT_MESSAGE" value="kafkaToKafka" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cjbdi/udfs/AnalysisProcessFunction.java</url>
-          <line>189</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

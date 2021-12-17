@@ -72,7 +72,8 @@ public class FlinkConfig {
                 .build();
         //kafkaSink 将 jsonToBean 失败的数据放到kafka 指定的 topic 中
         jsonErrorSink = KafkaSink.<String>builder()
-                .setBootstrapServers(KafkaConfig.brokers)
+                .setBootstrapServers(KafkaConfig.brokers2)
+                .setKafkaProducerConfig(properties)
                 .setRecordSerializer(KafkaRecordSerializationSchema.builder()
                         .setTopic(jsonErrorTopic)
                         .setValueSerializationSchema(new SimpleStringSchema())
@@ -80,16 +81,18 @@ public class FlinkConfig {
                 )
                 .build();
         analysisErrorSink = KafkaSink.<String>builder()
-                .setBootstrapServers(KafkaConfig.brokers)
+                .setBootstrapServers(KafkaConfig.brokers2)
                 .setRecordSerializer(KafkaRecordSerializationSchema.builder()
                         .setTopic(analysisErrorTopic)
                         .setValueSerializationSchema(new SimpleStringSchema())
                 .build()
                 )
+                .setKafkaProducerConfig(properties)
                 .build();
         //kafkaSink 将最终处理好的数据输出到 kafka 指定的 topic 中
         finalSink = KafkaSink.<String>builder()
-                .setBootstrapServers(KafkaConfig.brokers)
+                .setBootstrapServers(KafkaConfig.brokers2)
+                .setKafkaProducerConfig(properties)
                 .setRecordSerializer(KafkaRecordSerializationSchema.builder()
                         .setTopic(outputTopic)
                         .setValueSerializationSchema(new SimpleStringSchema()).build())
