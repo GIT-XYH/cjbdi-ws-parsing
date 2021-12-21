@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/../framework/cjbdi-gfs/pom.xml" />
         <option value="$PROJECT_DIR$/../framework/cjbdi-base/pom.xml" />
         <option value="$PROJECT_DIR$/../framework/cjbdi-ws-common/pom.xml" />
+        <option value="$PROJECT_DIR$/../external-source/cjbdi-ws-common/pom.xml" />
       </list>
     </option>
   </component>

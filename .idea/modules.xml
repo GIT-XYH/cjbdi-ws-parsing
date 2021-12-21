@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/../framework/cjbdi-fp-docs/cjbdi-fp-docs.iml" filepath="$PROJECT_DIR$/../framework/cjbdi-fp-docs/cjbdi-fp-docs.iml" />
       <module fileurl="file://$PROJECT_DIR$/../framework/cjbdi-fp-text/cjbdi-fp-text.iml" filepath="$PROJECT_DIR$/../framework/cjbdi-fp-text/cjbdi-fp-text.iml" />
       <module fileurl="file://$PROJECT_DIR$/../framework/cjbdi-gfs/cjbdi-gfs.iml" filepath="$PROJECT_DIR$/../framework/cjbdi-gfs/cjbdi-gfs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../framework/cjbdi-ws-common/cjbdi-ws-common.iml" filepath="$PROJECT_DIR$/../framework/cjbdi-ws-common/cjbdi-ws-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../external-source/cjbdi-ws-common/cjbdi-ws-common.iml" filepath="$PROJECT_DIR$/../external-source/cjbdi-ws-common/cjbdi-ws-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/cjbdi-ws-parsing.iml" filepath="$PROJECT_DIR$/cjbdi-ws-parsing.iml" />
     </modules>
   </component>

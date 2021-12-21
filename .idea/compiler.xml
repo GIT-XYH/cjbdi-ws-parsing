@@ -8,10 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cjbdi-fp-docs" />
-        <module name="cjbdi-fp-text" />
-        <module name="cjbdi-ws-parsing" />
         <module name="cjbdi-base" />
+        <module name="cjbdi-fp-text" />
         <module name="cjbdi-ws-common" />
+        <module name="cjbdi-ws-parsing" />
         <module name="cjbdi-gfs" />
       </profile>
     </annotationProcessing>
@@ -22,6 +22,7 @@
       <module name="cjbdi-gfs" target="1.8" />
       <module name="cjbdi-ws-common" target="1.8" />
       <module name="cjbdi-ws-common (1)" target="1.8" />
+      <module name="cjbdi-ws-common (2)" target="8" />
       <module name="cjbdi-ws-parsing" target="8" />
       <module name="shesu-common" target="1.8" />
       <module name="shesu-wsdoc" target="1.8" />

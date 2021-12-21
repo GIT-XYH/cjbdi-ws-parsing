@@ -27,6 +27,11 @@
         </dependency>
         <dependency>
             <groupId>com.cjbdi</groupId>
+            <artifactId>cjbdi-ws-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cjbdi</groupId>
             <artifactId>cjbdi-fp-text</artifactId>
             <version>0.0.1</version>
         </dependency>
